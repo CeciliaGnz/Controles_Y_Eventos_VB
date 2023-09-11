@@ -26,12 +26,13 @@ Partial Class frmMenu
         Me.mnust = New System.Windows.Forms.MenuStrip()
         Me.MatrizToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.OperaciónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnust.SuspendLayout()
         Me.SuspendLayout()
         '
         'mnust
         '
-        Me.mnust.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MatrizToolStripMenuItem})
+        Me.mnust.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MatrizToolStripMenuItem, Me.OperaciónToolStripMenuItem})
         Me.mnust.Location = New System.Drawing.Point(0, 0)
         Me.mnust.Name = "mnust"
         Me.mnust.Size = New System.Drawing.Size(800, 32)
@@ -49,6 +50,13 @@ Partial Class frmMenu
         '
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
+        '
+        'OperaciónToolStripMenuItem
+        '
+        Me.OperaciónToolStripMenuItem.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.OperaciónToolStripMenuItem.Name = "OperaciónToolStripMenuItem"
+        Me.OperaciónToolStripMenuItem.Size = New System.Drawing.Size(126, 28)
+        Me.OperaciónToolStripMenuItem.Text = "Operación"
         '
         'frmMenu
         '
@@ -70,4 +78,5 @@ Partial Class frmMenu
     Friend WithEvents mnust As MenuStrip
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
     Friend WithEvents MatrizToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents OperaciónToolStripMenuItem As ToolStripMenuItem
 End Class

@@ -80,6 +80,12 @@
       <DependentUpon>frmMenu.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmOperaciones.Designer.vb">
+      <DependentUpon>frmOperaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOperaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmRecorrido.Designer.vb">
       <DependentUpon>frmRecorrido.vb</DependentUpon>
     </Compile>
@@ -106,6 +112,9 @@
   <ItemGroup>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOperaciones.resx">
+      <DependentUpon>frmOperaciones.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRecorrido.resx">
       <DependentUpon>frmRecorrido.vb</DependentUpon>
