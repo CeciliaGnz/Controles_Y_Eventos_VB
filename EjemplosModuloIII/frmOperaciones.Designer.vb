@@ -30,6 +30,10 @@ Partial Class frmOperaciones
         Me.txtResp = New System.Windows.Forms.TextBox()
         Me.lblOperacion = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.rdbSuma = New System.Windows.Forms.RadioButton()
+        Me.rdbResta = New System.Windows.Forms.RadioButton()
+        Me.rdbMulti = New System.Windows.Forms.RadioButton()
+        Me.rdbDivi = New System.Windows.Forms.RadioButton()
         Me.SuspendLayout()
         '
         'Label1
@@ -93,11 +97,59 @@ Partial Class frmOperaciones
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "="
         '
+        'rdbSuma
+        '
+        Me.rdbSuma.AutoSize = True
+        Me.rdbSuma.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdbSuma.Location = New System.Drawing.Point(97, 214)
+        Me.rdbSuma.Name = "rdbSuma"
+        Me.rdbSuma.Size = New System.Drawing.Size(92, 28)
+        Me.rdbSuma.TabIndex = 6
+        Me.rdbSuma.Text = "Suma "
+        Me.rdbSuma.UseVisualStyleBackColor = True
+        '
+        'rdbResta
+        '
+        Me.rdbResta.AutoSize = True
+        Me.rdbResta.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdbResta.Location = New System.Drawing.Point(97, 264)
+        Me.rdbResta.Name = "rdbResta"
+        Me.rdbResta.Size = New System.Drawing.Size(86, 28)
+        Me.rdbResta.TabIndex = 7
+        Me.rdbResta.Text = "Resta"
+        Me.rdbResta.UseVisualStyleBackColor = True
+        '
+        'rdbMulti
+        '
+        Me.rdbMulti.AutoSize = True
+        Me.rdbMulti.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdbMulti.Location = New System.Drawing.Point(97, 308)
+        Me.rdbMulti.Name = "rdbMulti"
+        Me.rdbMulti.Size = New System.Drawing.Size(165, 28)
+        Me.rdbMulti.TabIndex = 8
+        Me.rdbMulti.Text = "Multiplicación"
+        Me.rdbMulti.UseVisualStyleBackColor = True
+        '
+        'rdbDivi
+        '
+        Me.rdbDivi.AutoSize = True
+        Me.rdbDivi.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdbDivi.Location = New System.Drawing.Point(97, 354)
+        Me.rdbDivi.Name = "rdbDivi"
+        Me.rdbDivi.Size = New System.Drawing.Size(109, 28)
+        Me.rdbDivi.TabIndex = 9
+        Me.rdbDivi.Text = "División"
+        Me.rdbDivi.UseVisualStyleBackColor = True
+        '
         'frmOperaciones
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.rdbDivi)
+        Me.Controls.Add(Me.rdbMulti)
+        Me.Controls.Add(Me.rdbResta)
+        Me.Controls.Add(Me.rdbSuma)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lblOperacion)
         Me.Controls.Add(Me.txtResp)
@@ -118,4 +170,8 @@ Partial Class frmOperaciones
     Friend WithEvents txtResp As TextBox
     Friend WithEvents lblOperacion As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents rdbSuma As RadioButton
+    Friend WithEvents rdbResta As RadioButton
+    Friend WithEvents rdbMulti As RadioButton
+    Friend WithEvents rdbDivi As RadioButton
 End Class
