@@ -24,8 +24,8 @@ Partial Class frmMenu
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.mnust = New System.Windows.Forms.MenuStrip()
-        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.MatrizToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.mnust.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -38,17 +38,17 @@ Partial Class frmMenu
         Me.mnust.TabIndex = 1
         Me.mnust.Text = "Matriz"
         '
-        'ContextMenuStrip1
-        '
-        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
-        '
         'MatrizToolStripMenuItem
         '
         Me.MatrizToolStripMenuItem.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MatrizToolStripMenuItem.Name = "MatrizToolStripMenuItem"
         Me.MatrizToolStripMenuItem.Size = New System.Drawing.Size(82, 28)
         Me.MatrizToolStripMenuItem.Text = "Matriz"
+        '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
         '
         'frmMenu
         '
