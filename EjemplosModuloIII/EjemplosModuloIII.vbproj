@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6E9C5692-899A-4A61-BE13-6AC9E83AE740}</ProjectGuid>
+    <ProjectGuid>{0DA8076E-B3F3-4FE5-A494-80A90971762B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <StartupObject>EjemplosModuloIII.My.MyApplication</StartupObject>
     <RootNamespace>EjemplosModuloIII</RootNamespace>
@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmImagen.Designer.vb">
+      <DependentUpon>frmImagen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmImagen.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmMenu.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -92,11 +98,16 @@
     <Compile Include="frmRecorrido.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmRestaurante.Designer.vb">
+      <DependentUpon>frmRestaurante.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRestaurante.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -110,6 +121,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmImagen.resx">
+      <DependentUpon>frmImagen.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.vb</DependentUpon>
     </EmbeddedResource>
@@ -118,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmRecorrido.resx">
       <DependentUpon>frmRecorrido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRestaurante.resx">
+      <DependentUpon>frmRestaurante.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -137,6 +154,10 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\perro.jpg" />
+    <Content Include="img\tiburon.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

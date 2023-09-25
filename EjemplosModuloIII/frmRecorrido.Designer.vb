@@ -22,91 +22,86 @@ Partial Class frmRecorrido
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.btnRecorrido = New System.Windows.Forms.Button()
-        Me.btnGenerar = New System.Windows.Forms.Button()
-        Me.dgvRecorrido = New System.Windows.Forms.DataGridView()
-        Me.dgvNumeros = New System.Windows.Forms.DataGridView()
-        Me.nudTope = New System.Windows.Forms.NumericUpDown()
         Me.Label1 = New System.Windows.Forms.Label()
-        CType(Me.dgvRecorrido, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgvNumeros, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.nudTope = New System.Windows.Forms.NumericUpDown()
+        Me.dgvNumeros = New System.Windows.Forms.DataGridView()
+        Me.dgvRecorrido = New System.Windows.Forms.DataGridView()
+        Me.btnGenerar = New System.Windows.Forms.Button()
+        Me.btnRecorrer = New System.Windows.Forms.Button()
         CType(Me.nudTope, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvNumeros, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvRecorrido, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'btnRecorrido
+        'Label1
         '
-        Me.btnRecorrido.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRecorrido.Location = New System.Drawing.Point(461, 99)
-        Me.btnRecorrido.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnRecorrido.Name = "btnRecorrido"
-        Me.btnRecorrido.Size = New System.Drawing.Size(158, 36)
-        Me.btnRecorrido.TabIndex = 11
-        Me.btnRecorrido.Text = "Recorrido"
-        Me.btnRecorrido.UseVisualStyleBackColor = True
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(380, 53)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(651, 51)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "RECORRIDO DE UNA MATRIZ"
         '
-        'btnGenerar
+        'nudTope
         '
-        Me.btnGenerar.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnGenerar.Location = New System.Drawing.Point(182, 99)
-        Me.btnGenerar.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnGenerar.Name = "btnGenerar"
-        Me.btnGenerar.Size = New System.Drawing.Size(158, 36)
-        Me.btnGenerar.TabIndex = 10
-        Me.btnGenerar.Text = "Generar "
-        Me.btnGenerar.UseVisualStyleBackColor = True
-        '
-        'dgvRecorrido
-        '
-        Me.dgvRecorrido.AllowUserToDeleteRows = False
-        Me.dgvRecorrido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvRecorrido.Location = New System.Drawing.Point(461, 157)
-        Me.dgvRecorrido.Margin = New System.Windows.Forms.Padding(2)
-        Me.dgvRecorrido.Name = "dgvRecorrido"
-        Me.dgvRecorrido.ReadOnly = True
-        Me.dgvRecorrido.RowHeadersWidth = 51
-        Me.dgvRecorrido.RowTemplate.Height = 24
-        Me.dgvRecorrido.Size = New System.Drawing.Size(338, 260)
-        Me.dgvRecorrido.TabIndex = 9
+        Me.nudTope.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.nudTope.Location = New System.Drawing.Point(651, 126)
+        Me.nudTope.Maximum = New Decimal(New Integer() {20, 0, 0, 0})
+        Me.nudTope.Name = "nudTope"
+        Me.nudTope.Size = New System.Drawing.Size(120, 41)
+        Me.nudTope.TabIndex = 1
         '
         'dgvNumeros
         '
         Me.dgvNumeros.AllowUserToDeleteRows = False
         Me.dgvNumeros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvNumeros.Location = New System.Drawing.Point(48, 157)
-        Me.dgvNumeros.Margin = New System.Windows.Forms.Padding(2)
+        Me.dgvNumeros.Location = New System.Drawing.Point(27, 266)
         Me.dgvNumeros.Name = "dgvNumeros"
         Me.dgvNumeros.ReadOnly = True
         Me.dgvNumeros.RowHeadersWidth = 51
         Me.dgvNumeros.RowTemplate.Height = 24
-        Me.dgvNumeros.Size = New System.Drawing.Size(338, 260)
-        Me.dgvNumeros.TabIndex = 8
+        Me.dgvNumeros.Size = New System.Drawing.Size(654, 340)
+        Me.dgvNumeros.TabIndex = 2
         '
-        'nudTope
+        'dgvRecorrido
         '
-        Me.nudTope.Location = New System.Drawing.Point(356, 69)
-        Me.nudTope.Margin = New System.Windows.Forms.Padding(2)
-        Me.nudTope.Maximum = New Decimal(New Integer() {20, 0, 0, 0})
-        Me.nudTope.Name = "nudTope"
-        Me.nudTope.Size = New System.Drawing.Size(90, 20)
-        Me.nudTope.TabIndex = 7
+        Me.dgvRecorrido.AllowUserToDeleteRows = False
+        Me.dgvRecorrido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvRecorrido.Location = New System.Drawing.Point(741, 266)
+        Me.dgvRecorrido.Name = "dgvRecorrido"
+        Me.dgvRecorrido.ReadOnly = True
+        Me.dgvRecorrido.RowHeadersWidth = 51
+        Me.dgvRecorrido.RowTemplate.Height = 24
+        Me.dgvRecorrido.Size = New System.Drawing.Size(654, 340)
+        Me.dgvRecorrido.TabIndex = 3
         '
-        'Label1
+        'btnGenerar
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(221, 20)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(386, 37)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Recorrido de Una Matriz"
+        Me.btnGenerar.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGenerar.Location = New System.Drawing.Point(454, 194)
+        Me.btnGenerar.Name = "btnGenerar"
+        Me.btnGenerar.Size = New System.Drawing.Size(213, 51)
+        Me.btnGenerar.TabIndex = 4
+        Me.btnGenerar.Text = "Generar"
+        Me.btnGenerar.UseVisualStyleBackColor = True
+        '
+        'btnRecorrer
+        '
+        Me.btnRecorrer.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRecorrer.Location = New System.Drawing.Point(758, 194)
+        Me.btnRecorrer.Name = "btnRecorrer"
+        Me.btnRecorrer.Size = New System.Drawing.Size(213, 51)
+        Me.btnRecorrer.TabIndex = 5
+        Me.btnRecorrer.Text = "Recorrer"
+        Me.btnRecorrer.UseVisualStyleBackColor = True
         '
         'frmRecorrido
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(896, 536)
-        Me.Controls.Add(Me.btnRecorrido)
+        Me.ClientSize = New System.Drawing.Size(1430, 687)
+        Me.Controls.Add(Me.btnRecorrer)
         Me.Controls.Add(Me.btnGenerar)
         Me.Controls.Add(Me.dgvRecorrido)
         Me.Controls.Add(Me.dgvNumeros)
@@ -114,18 +109,18 @@ Partial Class frmRecorrido
         Me.Controls.Add(Me.Label1)
         Me.Name = "frmRecorrido"
         Me.Text = "frmRecorrido"
-        CType(Me.dgvRecorrido, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgvNumeros, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nudTope, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvNumeros, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvRecorrido, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents btnRecorrido As Button
-    Friend WithEvents btnGenerar As Button
-    Friend WithEvents dgvRecorrido As DataGridView
-    Friend WithEvents dgvNumeros As DataGridView
-    Friend WithEvents nudTope As NumericUpDown
     Friend WithEvents Label1 As Label
+    Friend WithEvents nudTope As NumericUpDown
+    Friend WithEvents dgvNumeros As DataGridView
+    Friend WithEvents dgvRecorrido As DataGridView
+    Friend WithEvents btnGenerar As Button
+    Friend WithEvents btnRecorrer As Button
 End Class

@@ -22,50 +22,61 @@ Partial Class frmMenu
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Me.mnust = New System.Windows.Forms.MenuStrip()
         Me.MatrizToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.OperaciónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ImagenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RestauranteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnust.SuspendLayout()
         Me.SuspendLayout()
         '
         'mnust
         '
-        Me.mnust.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MatrizToolStripMenuItem, Me.OperaciónToolStripMenuItem})
+        Me.mnust.Font = New System.Drawing.Font("Segoe UI", 22.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mnust.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.mnust.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MatrizToolStripMenuItem, Me.OperaciónToolStripMenuItem, Me.ImagenToolStripMenuItem, Me.RestauranteToolStripMenuItem})
         Me.mnust.Location = New System.Drawing.Point(0, 0)
         Me.mnust.Name = "mnust"
-        Me.mnust.Size = New System.Drawing.Size(800, 32)
+        Me.mnust.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
+        Me.mnust.Size = New System.Drawing.Size(790, 49)
         Me.mnust.TabIndex = 1
-        Me.mnust.Text = "Matriz"
+        Me.mnust.Text = "MenuStrip1"
         '
         'MatrizToolStripMenuItem
         '
-        Me.MatrizToolStripMenuItem.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MatrizToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 22.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MatrizToolStripMenuItem.Name = "MatrizToolStripMenuItem"
-        Me.MatrizToolStripMenuItem.Size = New System.Drawing.Size(82, 28)
+        Me.MatrizToolStripMenuItem.Size = New System.Drawing.Size(122, 45)
         Me.MatrizToolStripMenuItem.Text = "Matriz"
-        '
-        'ContextMenuStrip1
-        '
-        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
         '
         'OperaciónToolStripMenuItem
         '
-        Me.OperaciónToolStripMenuItem.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.OperaciónToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 22.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.OperaciónToolStripMenuItem.Name = "OperaciónToolStripMenuItem"
-        Me.OperaciónToolStripMenuItem.Size = New System.Drawing.Size(126, 28)
+        Me.OperaciónToolStripMenuItem.Size = New System.Drawing.Size(175, 45)
         Me.OperaciónToolStripMenuItem.Text = "Operación"
+        '
+        'ImagenToolStripMenuItem
+        '
+        Me.ImagenToolStripMenuItem.Name = "ImagenToolStripMenuItem"
+        Me.ImagenToolStripMenuItem.Size = New System.Drawing.Size(136, 45)
+        Me.ImagenToolStripMenuItem.Text = "Imagen"
+        '
+        'RestauranteToolStripMenuItem
+        '
+        Me.RestauranteToolStripMenuItem.Name = "RestauranteToolStripMenuItem"
+        Me.RestauranteToolStripMenuItem.Size = New System.Drawing.Size(198, 45)
+        Me.RestauranteToolStripMenuItem.Text = "Restaurante"
         '
         'frmMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(790, 458)
         Me.Controls.Add(Me.mnust)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.mnust
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "frmMenu"
         Me.Text = "Menú"
         Me.mnust.ResumeLayout(False)
@@ -76,7 +87,8 @@ Partial Class frmMenu
     End Sub
 
     Friend WithEvents mnust As MenuStrip
-    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
     Friend WithEvents MatrizToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents OperaciónToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ImagenToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents RestauranteToolStripMenuItem As ToolStripMenuItem
 End Class
