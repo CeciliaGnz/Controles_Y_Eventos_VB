@@ -86,12 +86,6 @@
       <DependentUpon>frmMenu.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmNumeros.Designer.vb">
-      <DependentUpon>frmNumeros.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmNumeros.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frmOperaciones.Designer.vb">
       <DependentUpon>frmOperaciones.vb</DependentUpon>
     </Compile>
@@ -110,7 +104,6 @@
     <Compile Include="frmRestaurante.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FunySub.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -126,8 +119,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="NumerosPar.vb" />
-    <Compile Include="Restaurante.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmImagen.resx">
@@ -135,9 +126,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmNumeros.resx">
-      <DependentUpon>frmNumeros.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmOperaciones.resx">
       <DependentUpon>frmOperaciones.vb</DependentUpon>

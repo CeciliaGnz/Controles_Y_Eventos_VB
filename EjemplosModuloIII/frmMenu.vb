@@ -15,10 +15,4 @@
         frmImagen.WindowState = FormWindowState.Maximized
         frmImagen.Show()
     End Sub
-
-    Private Sub RestauranteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RestauranteToolStripMenuItem.Click
-        frmRestaurante.MdiParent = Me
-        frmRestaurante.WindowState = FormWindowState.Maximized
-        frmRestaurante.Show()
-    End Sub
 End Class
